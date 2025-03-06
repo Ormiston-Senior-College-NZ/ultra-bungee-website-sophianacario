@@ -1,11 +1,18 @@
 /* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 
 
 /* site colour palette */
 :root {
-    --color: 
+    --darkblue: #093c64;
+    --orange: #FFA273;
+    --yellow: #FAF15D;
+    --verdigris: #3DB4B4;
 }
 
+#main_image {
+    width: 100%;
+    }
 
 /* generic style reset */
 *{
@@ -14,4 +21,25 @@
     box-sizing: border-box;
 }
 
+nav {
+    float: right;
+}
+
 /* add your own style rules here */
+h1 {
+    font-family:'Oswald', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color:var(--darkblue);
+    background-color: var(--yellow);
+    margin: 250px 50px 250px 50px;
+
+    }
+main {
+    width: 80%;
+    }
+
+footer {
+    padding: 10px;
+    border: 1px
+    }
