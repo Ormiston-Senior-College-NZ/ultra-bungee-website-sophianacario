@@ -20,7 +20,7 @@
 body {
     width: 100%;
     background-image: url("img/ultra-bungee-hero.jpg");
-    background-attachment: fixed;
+    background-attachment:fixed;
     background-size:cover;
     text-align: center;
     align-items: center;
@@ -95,13 +95,13 @@ footer {
     font-size:20px;
     font-family: 'Noto Sans', sans-serif;
     padding: 15px;
-    margin-top: 25px;
+    margin-top: 100px;
     }
 
 .container {
     align-items:center;
     background: var(--yellow);
     padding: 20px;
-    margin: 294px 50px 150px 50px;
+    margin: 380px 50px 0 50px;
     }
 
