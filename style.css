@@ -10,10 +10,6 @@
     --verdigris: #3DB4B4;
 }
 
-#main_image {
-    width: 100%;
-    }
-
 /* generic style reset */
 *{
     margin: 0px;
@@ -23,6 +19,9 @@
 
 nav {
     float: right;
+    margin: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 /* add your own style rules here */
@@ -31,15 +30,59 @@ h1 {
     font-size: 60px;
     text-align: center;
     color:var(--darkblue);
+    margin:400px 200px 0 200px;
+    text-transform: uppercase;
     background-color: var(--yellow);
-    margin: 250px 50px 250px 50px;
-
-    }
-main {
-    width: 80%;
     }
 
 footer {
-    padding: 10px;
-    border: 1px
+    text-align: center;
+    background-color: var(--darkblue);
+    color: white;
+    font-size:20px;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 15px;
+    margin-top: 90px
     }
+
+header img {
+    height: 5;
+    width:10%;
+    float: left; 
+    margin-left: 22px;
+}
+
+header {
+    background-color: var(--verdigris);
+    padding-bottom:55px;
+    font-family: 'Lato', sans-serif;
+}
+
+button {
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 20px;
+    color: var(--darkblue);
+    background-color: var(--orange);
+    text-transform: uppercase;
+    padding:10px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+body {
+    width: 100%;
+    background-image: url("img/ultra-bungee-hero.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+    text-align: center;
+    align-items: center;
+}
+
+a {
+    color: var(--darkblue);
+    font-weight: bold;
+    margin: 5px;
+}
