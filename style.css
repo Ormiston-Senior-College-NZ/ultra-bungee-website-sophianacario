@@ -32,7 +32,7 @@ h1 {
     color:var(--darkblue);
     margin:400px 200px 0 200px;
     text-transform: uppercase;
-    background-color: var(--yellow);
+    color: white;
     }
 
 footer {
@@ -54,7 +54,7 @@ header img {
 
 header {
     background-color: var(--verdigris);
-    padding-bottom:55px;
+    padding-bottom:50px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -63,14 +63,24 @@ button {
     font-family: 'Lato';
     font-size: 20px;
     color: var(--darkblue);
-    background-color: var(--orange);
+    background-color: var(--yellow);
     text-transform: uppercase;
     padding:10px 20px;
-    border: none;
     border-radius: 5px; 
     cursor: pointer;
-    margin-top: 10px;
+    border: none;
+
 }
+
+button:hover {
+    filter: brightness(120%);
+    box-shadow: 5px 5px 5px var(--orange);
+  }
+  
+  button:active {
+    box-shadow: inset 2px 2px 10px var(--orange);
+  }
+  
 
 body {
     width: 100%;
