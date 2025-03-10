@@ -74,18 +74,26 @@ h1 {
 }
 
 .button:hover {
-    filter: brightness(120%);
-    box-shadow: 5px 5px 5px var(--verdigris);
+    filter: brightness(110%);
+    background-color: var(--verdigris);
   }
   
 .button:active {
-    box-shadow: inset 2px 2px 10px var(--verdigris);
+    background-color: var(--verdigris);
   }
   
 a {
     color: var(--darkblue);
     font-weight: bold;
     margin: 10px;
+}
+
+a:active {
+    color:var(--yellow);
+}
+
+a:hover {
+    color:var(--yellow);
 }
 
 
