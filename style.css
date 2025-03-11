@@ -42,7 +42,7 @@ header img {
 
 nav {
     float: right;
-    margin: 20px;
+    margin: 25px;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -86,14 +86,15 @@ a {
     color: var(--darkblue);
     font-weight: bold;
     margin: 10px;
+    text-decoration: none;
 }
 
-a:active {
+.active {
     color:var(--yellow);
 }
 
 a:hover {
-    color:var(--yellow);
+    color:gold;
 }
 
 
