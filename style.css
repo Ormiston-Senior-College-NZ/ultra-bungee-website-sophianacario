@@ -17,6 +17,7 @@
     box-sizing: border-box;
 }
 
+
 body.home {
     width: 100%;
     background-image: url("img/ultra-bungee-hero.jpg");
@@ -24,68 +25,172 @@ body.home {
     background-size:cover;
     text-align: center;
     align-items: center;
+
+}
+
+
+body.home .container {
+    margin: 380px 55px 0 55px;
+    padding: 25px;
+    background:#faf25df8;
+    align-items:center;
+    animation: fadeIn 2s;
+    }
+
+body.bridge .container {
+    background-image: url("img/bridge_hero_image.jpg");
+    background-size: 100%;
+    width: 100%;
+    padding: 205px 0 205px 0;
+    align-items: center;
+    animation: fadeIn 2s;
+    text-align: center;
+    }
+
+body.canyon .container {
+    background-image: url("img/canyon1.jpg");
+    background-size: 100%;
+    width: 100%;
+    padding: 205px 0 205px 0;
+    align-items: center;
+    animation: fadeIn 2s;
+    text-align: center;
+    }
+
+body.tower .container {
+    background-image: url("img/tower1.jpg"); 
+    background-size: 100%;
+    width: 100%;
+    padding: 205px 0 205px 0;
+    align-items: center;
+    animation: fadeIn 2s;
+    text-align: center;
+    }
+
+body.gallery {
+    width:100%;
+    background-color: var(--yellow);
+    align-items: center; 
+}
+
+body.bridge .box {
+    margin: 10px;
+    border: 10px dashed var(--verdigris);
+    background-color: var(--yellow);
+}
+
+body.canyon .box {
+    margin: 10px;
+    border: 10px dashed var(--yellow);
+    background-color: var(--verdigris);
+}
+
+body.tower .box {
+    margin: 10px;
+    border: 10px dashed gold ;
+    background-color: white;
+}
+
+body.bridge .container h1 {
+    color: white;
+    background-color: var(--darkblue);
+    margin: 25px 50px;
+}
+
+body.canyon .container h1 {
+    color: var(--darkblue);
+    background-color: gold;
+    margin: 25px 50px;
+}
+
+body.tower .container h1 {
+    color: gold;
+    background-color: hotpink;
+    margin: 25px 50px;
+}
+
+body.bridge, body.canyon, body.tower{
+    background-color: var(--verdigris);
+}
+
+body.canyon {
+    background-color: var(--yellow);
+}
+body.tower{
+    background-color: gold;
+}
+
+body.bridge h1, body.canyon h1, body.tower h1 {
+    margin: 0 500px;
+    color: var(--darkblue);
+    text-align:center;
 }
 
 header {
-    background-color: var(--verdigris);
     padding-bottom:50px;
+    background-color: var(--verdigris);
     font-family: 'Lato', sans-serif;
 }
 
-header img {
-    height: 55px;
+header img{
     width:10%;
-    float: left; 
+    height: 55px;
     margin: 5px 0 0 22px;
+    float: left; 
+
 }
 
-
 nav {
-    float: right;
     margin: 25px;
     text-transform: uppercase;
     text-decoration: none;
+    float: right;
+}
+
+.hero_image {
+    width:100%;
+    height: 605px;
 }
 
 /* add your own style rules here */
 h1 {
+    margin:0 200px 15px 200px;
     font-family:'Oswald', sans-serif;
     font-size: 60px;
-    text-align: center;
     color:var(--darkblue);
-    margin:0 200px 15px 200px;
+    text-align: center;
     text-transform: uppercase;
     }
 
-
-.button {
-    text-align: center;
+h2 {
     font-family: 'Lato';
-    font-size: 20px;
+    font-weight: 5000px;
     color: var(--darkblue);
-    background-color: var(--orange);
+    text-align: center;
     text-transform: uppercase;
-    padding:10px 20px;
-    border-radius: 5px; 
-    cursor: pointer;
-    border: none;
-    margin-top:20px;
+}
+
+h3 {
+    margin: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    color:var(--darkblue);
+    text-align: center;
 
 }
 
-.button:hover {
-    filter: brightness(110%);
-    background-color: var(--verdigris);
-  }
-  
-.button:active {
-    background-color: var(--verdigris);
-  }
-  
+h4 {
+    margin: 20px 0;
+    font-size: 25px;
+    font-family: 'Noto Sans', sans-serif;
+    color:var(--darkblue);
+    text-align: center;
+}
+
+
 a {
-    color: var(--darkblue);
-    font-weight: bold;
     margin: 10px;
+    font-weight: bold;
+    color: var(--darkblue);
     text-decoration: none;
 }
 
@@ -97,21 +202,72 @@ a:hover {
     color:gold;
 }
 
-
-footer {
+.button {
+    margin-top: 20px;
+    padding:10px 20px;
+    border: none;
+    border-radius: 5px; 
+    background-color: var(--orange);
+    font-family: 'Lato';
+    font-size: 20px;
+    color: var(--darkblue);
     text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--verdigris);
+    filter: brightness(110%);
+  }
+  
+.button:active {
+    background-color: var(--verdigris);
+  }
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+ul {
+    margin: 0 50px;
+    color: var(--darkblue);
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+}
+
+.photos {
+    align-items: center;
+    margin: 0 250px;
+}
+
+body.bridge footer, body.canyon footer, body.tower footer {
+    margin-top: 50px;
+    padding: 15px;
     background-color: var(--darkblue);
-    color: white;
     font-size:20px;
     font-family: 'Noto Sans', sans-serif;
+    color: white;
+    text-align: center;
+    }
+
+body.gallery footer {
+ margin-top: 290px;
+}
+
+footer {
+    margin-top: 250px;
     padding: 15px;
-    margin-top: 165px;
+    background-color: var(--darkblue);
+    font-size:20px;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    text-align: center;
     }
-
-.container {
-    align-items:center;
-    background: var(--yellow);
-    padding: 25px;
-    margin: 380px 55px 0 55px;
-    }
-
