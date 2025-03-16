@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+body.gallery h1 {
+    margin-top: 100px;
+}
+
 
 body.home {
     width: 100%;
@@ -69,7 +73,7 @@ body.tower .container {
 
 body.gallery {
     width:100%;
-    background-color: var(--yellow);
+    background-color: var(--orange);
     align-items: center; 
 }
 
@@ -104,8 +108,8 @@ body.canyon .container h1 {
 }
 
 body.tower .container h1 {
-    color: gold;
-    background-color: hotpink;
+    color: var(--orange);
+    background-color: var(--yellow);
     margin: 25px 50px;
 }
 
@@ -245,7 +249,7 @@ ul {
 
 .photos {
     align-items: center;
-    margin: 0 250px;
+    margin: 50px 250px 0 250px;
 }
 
 body.bridge footer, body.canyon footer, body.tower footer {
