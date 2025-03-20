@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet"
@@ -25,19 +26,30 @@
             <a href="gallery.html"class="active">Gallery</a>
         </nav>
     </header>  
-    <h1>Check our our awesome photos!</h1>
+    <h1>Check out our awesome photos!</h1>
     <div class="photos">
-    <a data-fancybox="gallery" href="img/bridge1.jpg"> <img src="img/bridge1_thumb.jpg"></a>
-    <a data-fancybox="gallery" href="img/bridge2.jpg"> <img src="img/bridge2_thumb.jpg"></a>
-    <a data-fancybox="gallery" href="img/bridge3.jpg"> <img src="img/bridge3_thumb.jpg"></a>
-    <a data-fancybox="gallery" href="img/bungee_general1.jpg"> <img src="img/bungee_general1_thumb.jpg"></a>
-    <a data-fancybox="gallery" href="img/bungee_general2.jpg"> <img src="img/bungee_general2_thumb.jpg"></a>
-    <a data-fancybox="gallery" href="img/canyon1.jpg"> <img src="img/canyon1_thumb.jpg"></a>
-    <a data-fancybox="gallery" href="img/canyon2.jpg"> <img src="img/canyon2_thumb.jpg"></a>
-    <a data-fancybox="gallery" href="img/canyon3.jpg"> <img src="img/canyon3_thumb.jpg"></a>
-    <a data-fancybox="gallery" href="img/tower1.jpg"> <img src="img/tower1_thumb.jpg"></a>
-    <a data-fancybox="gallery" href="img/tower2.jpg"> <img src="img/tower2_thumb.jpg"></a>
+    <a data-fancybox="gallery" href="img/bridge1.jpg"> <img src="img/bridge1_thumb.jpg" alt="bridge"></a>
+    <a data-fancybox="gallery" href="img/bridge2.jpg"> <img src="img/bridge2_thumb.jpg" alt="man on a bridge"></a>
+    <a data-fancybox="gallery" href="img/bridge3.jpg"> <img src="img/bridge3_thumb.jpg" alt="man bungee jumping"></a>
+    <a data-fancybox="gallery" href="img/bungee_general1.jpg"> <img src="img/bungee_general1_thumb.jpg" alt="women preparing to bungee jump"></a>
+    <a data-fancybox="gallery" href="img/bungee_general2.jpg"> <img src="img/bungee_general2_thumb.jpg" alt="bungee jumping boots"></a>
+    <a data-fancybox="gallery" href="img/canyon1.jpg"> <img src="img/canyon1_thumb.jpg" alt="woman bungee jumping"></a>
+    <a data-fancybox="gallery" href="img/canyon2.jpg"> <img src="img/canyon2_thumb.jpg" alt="motion of a woman bungee jumping"></a>
+    <a data-fancybox="gallery" href="img/canyon3.jpg"> <img src="img/canyon3_thumb.jpg" alt="person jumping off a canyon"></a>
+    <a data-fancybox="gallery" href="img/tower1.jpg"> <img src="img/tower1_thumb.jpg" alt="worm's eye view of the Sky Tower"></a>
+    <a data-fancybox="gallery" href="img/tower2.jpg"> <img src="img/tower2_thumb.jpg" alt="man bungee jumping"></a>
     </div>
+    <script>
+        $('a[href*="#"]').on('click', function(e) {
+          e.preventDefault()
+          $('html, body').animate(
+            {
+       scrollTop: $($(this).attr('href')).offset().top,
+      },
+      500,
+          );
+        });
+      </script>
 </body>
 <footer>
     <p><small>&copy; Ultra Bungee 2019 - Website by Web Makera inc.</small></p>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="style.css">
     <title>Ultra Bungee</title>
 </head>
@@ -28,7 +29,6 @@
     <h1>128</h1>
     <h2>metres</h2>
     <h3>Oreti River snakes it's way through New Zealand with amazing canyons and bridges. You'll get a unique, up close and personal experience as you jump from Iron Bridge, Oreti River.</h3>
-
    <h1>$180</h1>
    <h2>Adult Price</h2>
 <h3>Anyone over 14 years is considered to be an adult.</h3>
@@ -41,14 +41,26 @@
     <ul>
     <li>If it's your first time or if you don't want to jump alone, we offer tandem jumps with an instructor.</li>
     <li>For those who'd like to tandem jump with an instructor, a surcharge of an extra $25 is added to their charge.</li>
+    </ul>
     <h4>More info</h4>
-
+    <ul>
     <li>There are three jump slots (10am, 12pm, and 2pm), 7 days a week.</li>
     <li>The maximum total number of jumpers for any time slot is 20 (this number excludes instructors).</li>
     <li>To jump, children must be at least 10 years old <strong>AND</strong> 35 kgs, and must be accompanied by at least one adult (ie if a child is booked for a jump, there must be at least one adult booked in the same time slot).</li>
-</ul>
-<footer>
+    </ul>
+    <footer>
     <p><small>&copy; Ultra Bungee 2019 - Website by Web Makera inc.</small></p>
 </footer>
+<script>
+    $('a[href*="#"]').on('click', function(e) {
+      e.preventDefault()
+      $('html, body').animate(
+        {
+   scrollTop: $($(this).attr('href')).offset().top,
+  },
+  500,
+      );
+    });
+  </script>
 </body>
 </html>

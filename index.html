@@ -27,11 +27,21 @@
     <a class="button" href="canyon.html">Canyon</a>
     <a class="button" href="tower.html">Tower</a>  
 </div>
-
 <footer>
     <p><small>&copy; Ultra Bungee 2019 - Website by Web Makera inc.</small></p>
 </footer>
-
+<script>
+    $('a[href*="#"]').on('click', function(e) {
+      e.preventDefault()
+      $('html, body').animate(
+        {
+   scrollTop: $($(this).attr('href')).offset().top,
+  },
+  500,
+      );
+    });
+  </script>
+  
 </body>
 
 </html>
