@@ -288,11 +288,18 @@ footer a {
     }
 }
 
+@media (max-width:150px) {
+    body.home, body.bridge, body.canyon, body.tower, body.gallery {
+        padding: 10px;
+    }
+
+    .photos {
+        padding: 10px;
+    }
+}
 /*styling images in gallery*/
 .photos {
-    margin-top: 5px;
-    margin-bottom: 15px;
-    margin-left: 130px;
+    margin: 5px 0 15px 130px;
     align-items: center;
 }
 
